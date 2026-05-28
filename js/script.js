@@ -1,3 +1,5 @@
+const main = document.querySelector('main');
+
 tailwind.config = {
     theme: {
         extend: {
@@ -23,30 +25,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Mobile Menu Drawer Logic
+
 const btnOpen = document.getElementById('nav-open');
 const btnClose = document.getElementById('nav-close');
 const mobileMenu = document.getElementById('nav-mobile');
 const overlay = document.getElementById('nav-overlay');
 
 function toggleMenu() {
-    const isClosed = mobileMenu.classList.contains('translate-x-[100%]');
+    const isClosed = mobileMenu.classList.contains('translate-x-full');
 
     if (isClosed) {
-        // Open menu
-        mobileMenu.classList.remove('translate-x-[100%]');
+        mobileMenu.classList.remove('translate-x-full');
         mobileMenu.classList.add('translate-x-0');
-        overlay.classList.remove('hidden');
-        // slight delay for opacity transition
-        setTimeout(() => overlay.classList.remove('opacity-0'), 10);
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        overlay.classList.remove('hidden', 'opacity-0');
+
+        document.body.classList.add('overflow-hidden');
     } else {
-        // Close menu
-        mobileMenu.classList.add('translate-x-[100%]');
+        mobileMenu.classList.add('translate-x-full');
         mobileMenu.classList.remove('translate-x-0');
-        overlay.classList.add('opacity-0');
-        setTimeout(() => overlay.classList.add('hidden'), 300); // wait for transition
-        document.body.style.overflow = ''; // Restore scrolling
+        overlay.classList.add('hidden', 'opacity-0');
+
+        document.body.classList.remove('overflow-hidden');
     }
 }
 
@@ -54,12 +53,11 @@ btnOpen.addEventListener('click', toggleMenu);
 btnClose.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
 
-// FAQ Toggle Logic adapted for Minimal Brutalism / Glass theme
+
 function toggleFaq(button) {
     const answer = button.nextElementSibling;
     const icon = button.querySelector('i');
 
-    // Check if already open
     const isOpen = !answer.classList.contains('hidden');
 
     if (isOpen) {
@@ -80,4 +78,13 @@ const typed = new Typed('#typed-text', {
     typeSpeed: 50,
     backSpeed: 25,
     loop: true
+});
+
+const typedDesc = new Typed('#about-hero-desc', {
+    strings: [
+        'We are a.'
+    ],
+    typeSpeed: 30,
+    showCursor: true, 
+
 });
