@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import 'tailwindcss';
 
 ::-webkit-scrollbar {
@@ -16,23 +15,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.4);
-=======
-@import 'tailwindcss';
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.4);
->>>>>>> adcb0ccaa4fa766fd6bfcbee17d915bf6386ed9a
 }
