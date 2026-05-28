@@ -18,20 +18,51 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Tailwind CSS via CDN -->
+<<<<<<< HEAD
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
 </head>
 
+=======
+  <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#10b981', 
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+
+>>>>>>> adcb0ccaa4fa766fd6bfcbee17d915bf6386ed9a
 <body class="font-sans antialiased text-slate-200 selection:bg-primary selection:text-white min-h-screen relative">
 
     <!-- Fixed Global Background -->
     <div class="fixed inset-0 z-[-1]">
         <!-- Beautiful Dark Forest Background -->
+<<<<<<< HEAD
         <img src="https://plus.unsplash.com/premium_photo-1675348351049-3af664982b45?q=80&w=818&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Dark Forest Background" class="w-full h-full object-cover" />
         <!-- Gradient Overlay to ensure text readability -->
         <div class="absolute inset-0 bg-slate-950/70"></div>
+=======
+        <img src="img/forest-bg.avif"
+            alt="Dark Forest Background" class="w-full h-full object-cover" />
+        <!-- Gradient Overlay to ensure text readability -->
+        <div class="absolute inset-0 bg-slate-950/70"></div>    
+>>>>>>> adcb0ccaa4fa766fd6bfcbee17d915bf6386ed9a
         <!-- Extra radial gradient for center focus -->
         <div
             class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent via-slate-950/50 to-slate-950/90">
