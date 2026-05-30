@@ -14,13 +14,28 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Boxicons CSS via CDN -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CSS Y -->
+  <link href='css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Y -->
+    <script src="js/tailwind.js"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                },
+                colors: {
+                    primary: '#10b981', // emerald-500
+                }
+            }
+        }
+    }
+</script>
 
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+     <!-- PLUGIN KETIK -->
+    <script src="js/typed.umd.js"></script>
 </head>
 
 <body class="font-sans antialiased text-slate-200 selection:bg-primary selection:text-white min-h-screen relative">
@@ -260,7 +275,7 @@
                             </div>
 
                             <div
-                                class="col-span-2 md:-left-8 flex justify-center items-center gap-4 p-5 bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-2xl border border-white/20">
+                                class="sm:col-span-2 md:-left-8 flex justify-center items-center gap-4 p-5 bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-2xl border border-white/20">
                                 <div
                                     class="rounded-xl bg-primary text-white flex flex-col items-center justify-center p-3 font-bold shadow-inner">
                                     <span class="text-2xl leading-none">4.8</span>

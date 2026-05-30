@@ -14,10 +14,24 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Boxicons CSS via CDN -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.js"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                },
+                colors: {
+                    primary: '#10b981', // emerald-500
+                }
+            }
+        }
+    }
+</script>
 
     <!-- Tailwind Configuration -->
     <script>
@@ -118,8 +132,8 @@
     </nav>
 
     <!-- Glass Mobile Menu Drawer -->
-    <nav id="nav-mobile"
-        class="translate-x-full fixed z-60 top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950/60 backdrop-blur-2xl border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
+   <nav id="nav-mobile"
+    class="translate-x-full fixed z-[60] top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950 border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
         <div class="px-6 py-6 flex items-center justify-between border-b border-white/10">
             <h2 class="font-bold text-xl tracking-tight">Menu</h2>
             <div id="nav-close"
@@ -156,8 +170,8 @@
     </nav>
 
     <!-- Overlay for mobile menu -->
-    <div id="nav-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-20 hidden transition-opacity opacity-0">
-    </div>
+    <div id="nav-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-md z-20 hidden transition-all duration-300 opacity-0">
+</div>
 
      <!-- Main Content -->
     <main class=" pt-24 pb-12 w-full overflow-y-hidden">

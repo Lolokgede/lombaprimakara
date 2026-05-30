@@ -1,19 +1,5 @@
 const main = document.querySelector('main');
 
-tailwind.config = {
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            },
-            colors: {
-                primary: '#10b981',
-            }
-        }
-    }
-}
-
-
 window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     if (window.scrollY > 20) {
