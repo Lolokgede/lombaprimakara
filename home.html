@@ -14,21 +14,37 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Boxicons CSS via CDN -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CSS Y -->
+  <link href='css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Y -->
+    <script src="js/tailwind.js"></script>
+   
+   <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                },
+                colors: {
+                    primary: '#10b981', // emerald-500
+                }
+            }
+        }
+    }
+</script>
 
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+     <!-- PLUGIN KETIK -->
+    <script src="js/typed.umd.js"></script>
 </head>
 
 <body class="font-sans antialiased text-slate-200 selection:bg-primary selection:text-white min-h-screen relative">
 
     <!-- Fixed Global Background -->
-    <div class="fixed inset-0 z-[-1]">
+    <div class="fixed inset-0 -z-10">
         <!-- Beautiful Dark Forest Background -->
-        <img src="https://plus.unsplash.com/premium_photo-1675348351049-3af664982b45?q=80&w=818&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        <img src="img/photo-1511497584788-876760111969.avif"
             alt="Dark Forest Background" class="w-full h-full object-cover" />
         <!-- Gradient Overlay to ensure text readability -->
         <div class="absolute inset-0 bg-slate-950/70"></div>
@@ -113,14 +129,14 @@
 
             <!-- Mobile Menu Toggle -->
             <div id="nav-open" class="md:hidden text-white hover:text-primary transition-colors cursor-pointer">
-                <i class="bx bx-menu-right bx-remove-padding text-4xl"></i>
+                <i class="bx bx-menu bx-remove-padding text-4xl"></i>
             </div>
         </div>
     </nav>
 
     <!-- Glass Mobile Menu Drawer -->
     <nav id="nav-mobile"
-        class="translate-x-full fixed top-0 right-0 w-[80%] max-w-sm h-full z-6000 bg-slate-950/60 backdrop-blur-2xl border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
+        class="translate-x-full fixed z-50 top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950/60 backdrop-blur-2xl border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
         <div class="px-6 py-6 flex items-center justify-between border-b border-white/10">
             <h2 class="font-bold text-xl tracking-tight">Menu</h2>
             <div id="nav-close"
@@ -156,11 +172,12 @@
         </div>
     </nav>
     <!-- Overlay for mobile menu -->
-    <div id="nav-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-121 hidden transition-opacity opacity-0">
+    <div id="nav-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-20 hidden transition-opacity opacity-0">
     </div>
 
+
     <!-- Main Content -->
-    <main class="pt-24 pb-12 w-full">
+    <main class=" pt-24 pb-12 w-full overflow-y-hidden">
 
         <!-- Hero Section  -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20">
@@ -259,7 +276,7 @@
                             </div>
 
                             <div
-                                class="col-span-2 md:-left-8 flex justify-center items-center gap-4 p-5 bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-2xl border border-white/20">
+                                class="sm:col-span-2 md:-left-8 flex justify-center items-center gap-4 p-5 bg-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-2xl border border-white/20">
                                 <div
                                     class="rounded-xl bg-primary text-white flex flex-col items-center justify-center p-3 font-bold shadow-inner">
                                     <span class="text-2xl leading-none">4.8</span>
