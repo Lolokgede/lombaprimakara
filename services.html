@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Program & Services | Re-Earth</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -14,13 +14,13 @@
 
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Boxicons CSS Y-->
+  <!-- Boxicons CSS -->
   <link href="css/boxicons.min.css" rel="stylesheet" />
 
   <!-- Tailwind CSS Y-->
   <script src="js/tailwind.js"></script>
 
-  <!-- Tailwind Configuration -->
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -29,76 +29,74 @@
             sans: ['"Plus Jakarta Sans"', "sans-serif"],
           },
           colors: {
-            primary: "#10b981", // emerald-500
+            primary: "#10b981", 
           },
         },
       },
     };
   </script>
 
+  <!-- Aos -->
   <link rel="stylesheet" href="AOS-v2.3.2/aos.css" />
 </head>
 
-<body class="font-sans antialiased text-slate-200 selection:bg-primary selection:text-white min-h-screen relative">
-  <!-- Fixed Global Background -->
+<body class="relative min-h-screen font-sans antialiased text-slate-200 selection:bg-primary selection:text-white">
   <div class="fixed inset-0 z-[-1]">
     <!-- Background -->
-    <img src="img/bg-img.avif" alt="Dark Forest Background" class="w-full h-full object-cover" />
-    <!-- Gradient Overlay -->
+    <img src="img/bg-img.avif" alt="Dark Forest Background" class="object-cover w-full h-full" />
     <div class="absolute inset-0 bg-slate-950/70"></div>
     <div
       class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent via-slate-950/50 to-slate-950/90">
     </div>
   </div>
 
-  <!-- Glass Navbar -->
-  <nav class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-black/20 border-b border-white/10"
+  <!-- Navbar -->
+  <nav class="fixed top-0 z-50 w-full transition-all duration-300 border-b backdrop-blur-md bg-black/20 border-white/10"
     id="navbar">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 px-6 md:px-10 h-20">
-      <!-- Logo -->
-      <div class="text-2xl font-black text-white flex items-center gap-2">
-        <i class="bx bxs-leaf text-primary text-3xl"></i>
+    <div class="flex items-center justify-between h-20 p-4 px-6 mx-auto max-w-7xl md:px-10">
+      <div class="flex items-center gap-2 text-2xl font-black text-white">
+        <i class="text-3xl bx bxs-leaf text-primary"></i>
         <h1>RE-<span class="text-primary">EARTH</span></h1>
       </div>
 
-      <!-- Desktop Links -->
-      <div class="hidden md:flex items-center gap-10 font-medium text-slate-300">
+      <!-- Desktop -->
+      <div class="items-center hidden gap-10 font-medium md:flex text-slate-300">
         <div class="flex items-center gap-1">
-          <a href="home.html" class="hover:text-primary transition-colors">Home</a>
+          <a href="home.html" class="transition-colors hover:text-primary">Home</a>
           <div class="relative group">
-            <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-              <i class="bx bx-chevron-down text-lg"></i>
+            <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+              <i class="text-lg bx bx-chevron-down"></i>
             </span>
-            <div class="absolute top-full right-0 hidden group-hover:block pt-5">
-              <div class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+            <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
+              <div class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                 <a href="home.html#faq"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">FAQ</a>
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">FAQ</a>
                 <a href="home.html#testimonials"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Testimonials</a>
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Testimonials</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="flex items-center gap-1">
-          <a href="about.html" class="hover:text-primary transition-colors">About</a>
+          <a href="about.html" class="transition-colors hover:text-primary">About</a>
           <div class="relative group">
-            <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-              <i class="bx bx-chevron-down text-lg"></i>
+            <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+              <i class="text-lg bx bx-chevron-down"></i>
             </span>
-            <div class="absolute top-full right-0 hidden group-hover:block pt-5">
-              <div class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+            <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
+              <div class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                 <a href="about.html#journey"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">
                   Journey</a>
                 <a href="about.html#vision"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">
                   Vision</a>
                 <a href="about.html#mission"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">
                   Mission</a>
                 <a href="about.html#team"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">
                   Team</a>
               </div>
             </div>
@@ -106,25 +104,24 @@
         </div>
 
         <div class="flex items-center gap-1">
-          <a href="services.html" class="text-primary transition-colors">Services</a>
+          <a href="services.html" class="transition-colors text-primary">Services</a>
           <div class="relative group">
-            <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-              <i class="bx bx-chevron-down text-lg text-primary"></i>
+            <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+              <i class="text-lg bx bx-chevron-down text-primary"></i>
             </span>
-            <div class="absolute top-full right-0 hidden group-hover:block pt-5">
-              <div class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+            <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
+              <div class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                 <a href="services.html#types"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Waste
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Waste
                   Types</a>
                 <a href="services.html#prices"
-                  class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Prices</a>
+                  class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Prices</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Join Us Button -->
       <div class="hidden md:block">
         <a href="contact.html"
           class=" bg-primary hover:bg-emerald-400 text-white font-semibold py-2.5 px-6 rounded-full transition-all shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">
@@ -132,41 +129,41 @@
         </a>
       </div>
 
-      <!-- Mobile Menu Toggle -->
-      <div id="nav-open" class="md:hidden text-white hover:text-primary transition-colors cursor-pointer">
-        <i class="bx bx-menu bx-remove-padding text-4xl"></i>
+      <!-- Mobile Menu  -->
+      <div id="nav-open" class="text-white transition-colors cursor-pointer md:hidden hover:text-primary">
+        <i class="text-4xl bx bx-menu bx-remove-padding"></i>
       </div>
     </div>
   </nav>
 
-  <!-- Glass Mobile Menu Drawer -->
+  <!--  Mobile -->
   <nav id="nav-mobile"
     class="translate-x-full fixed z-[60] top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950 border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
-    <div class="px-6 py-6 flex items-center justify-between border-b border-white/10">
-      <h2 class="font-bold text-xl tracking-tight">Menu</h2>
+    <div class="flex items-center justify-between px-6 py-6 border-b border-white/10">
+      <h2 class="text-xl font-bold tracking-tight">Menu</h2>
       <div id="nav-close"
-        class="cursor-pointer text-slate-400 hover:text-white transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10 flex items-center justify-center">
-        <i class="bx bx-x text-2xl"></i>
+        class="flex items-center justify-center p-2 transition-colors rounded-full cursor-pointer text-slate-400 hover:text-white bg-white/5 hover:bg-white/10">
+        <i class="text-2xl bx bx-x"></i>
       </div>
     </div>
 
-    <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+    <div class="flex flex-col flex-1 gap-8 px-6 py-8 overflow-y-auto">
       <div class="flex flex-col gap-4">
-        <a href="home.html" class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Home</a>
+        <a href="home.html" class="text-2xl font-semibold transition-colors text-slate-300 hover:text-primary">Home</a>
         <a href="about.html"
-          class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">About</a>
-        <a href="services.html" class="text-2xl font-semibold text-primary transition-colors">Services</a>
+          class="text-2xl font-semibold transition-colors text-slate-300 hover:text-primary">About</a>
+        <a href="services.html" class="text-2xl font-semibold transition-colors text-primary">Services</a>
       </div>
 
       <hr class="border-white/10" />
 
       <div class="flex flex-col gap-4">
-        <span class="text-sm font-medium text-slate-500 uppercase tracking-wider">Other Links</span>
-        <a href="home.html#faq" class="text-lg font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
-        <a href="about.html#team" class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Our
+        <span class="text-sm font-medium tracking-wider uppercase text-slate-500">Other Links</span>
+        <a href="home.html#faq" class="text-lg font-medium transition-colors text-slate-300 hover:text-white">FAQ</a>
+        <a href="about.html#team" class="text-lg font-medium transition-colors text-slate-300 hover:text-white">Our
           Team</a>
         <a href="services.html#prices"
-          class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Prices</a>
+          class="text-lg font-medium transition-colors text-slate-300 hover:text-white">Prices</a>
       </div>
     </div>
 
@@ -178,158 +175,154 @@
     </div>
   </nav>
 
-  <!-- Overlay for mobile menu -->
   <div id="nav-overlay"
-    class="fixed inset-0 bg-black/40 backdrop-blur-md z-20 hidden transition-all duration-300 opacity-0"></div>
+    class="fixed inset-0 z-20 hidden transition-all duration-300 opacity-0 bg-black/40 backdrop-blur-md"></div>
 
   <!-- Main Content -->
-  <main class="pt-24 pb-12 w-full overflow-y-hidden">
-    <!-- 1. Hero Section -->
-    <section class="max-w-7xl mx-auto mt-16 px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-      <div class="text-center max-w-3xl mx-auto z-10">
+  <main class="w-full pt-24 pb-12 overflow-y-hidden">
+    
+    <!-- Hero Section -->
+    <section class="px-4 pt-16 pb-12 mx-auto mt-16 max-w-7xl sm:px-6 lg:px-8">
+      <div class="z-10 max-w-3xl mx-auto text-center">
         <span data-aos="fade-up" data-aos-duration="1000"
           class="text-sm inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary font-semibold tracking-widest uppercase mb-6 shadow-xl">
           Services
         </span>
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
-          class="text-4xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
+          class="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-white md:text-7xl drop-shadow-lg">
           Turn Trash into
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200"> Cash. </span>
         </h1>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
-          class="text-base md:text-xl text-slate-300 mb-10 font-light leading-relaxed drop-shadow-md">
+          class="mb-10 text-base font-light leading-relaxed md:text-xl text-slate-300 drop-shadow-md">
           Find a complete guide to the types of waste we accept, our latest price list, and simulate your potential
           earnings using our smart calculator.
         </p>
       </div>
     </section>
 
-    <!-- 2. Jenis Sampah Section -->
-    <section id="types" class="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8 py-10 pt-40">
-      <div class="text-center mb-12">
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-3xl font-bold text-white mb-4">
+    <!-- Jenis Sampah Section -->
+    <section id="types" class="px-4 py-10 pt-40 mx-auto mt-20 max-w-7xl sm:px-6 lg:px-8">
+      <div class="mb-12 text-center">
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="mb-4 text-3xl font-bold text-white">
           Types of Waste We Accept
         </h2>
-        <div data-aos="fade-up" data-aos-duration="1000" class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="w-20 h-1 mx-auto rounded-full bg-primary"></div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Plastik -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
         <div data-aos="fade-up" data-aos-duration="1000"
-          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 shadow-xl group">
+          class="p-8 transition-all duration-300 border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 hover:border-primary/50 group">
           <div
-            class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i class="bx bx-water text-3xl"></i>
+            class="flex items-center justify-center mb-6 transition-transform duration-300 w-14 h-14 bg-primary/20 rounded-2xl text-primary group-hover:scale-110">
+            <i class="text-3xl bx bx-water"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Plastic</h3>
-          <p class="text-slate-400 font-light text-sm">PET bottles, plastic drink glasses, packaging, and jugs.</p>
+          <h3 class="mb-2 text-xl font-bold text-white">Plastic</h3>
+          <p class="text-sm font-light text-slate-400">PET bottles, plastic drink glasses, packaging, and jugs.</p>
         </div>
 
-        <!-- Kertas -->
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
-          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 shadow-xl group">
+          class="p-8 transition-all duration-300 border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 hover:border-primary/50 group">
           <div
-            class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i class="bx bx-news text-3xl"></i>
+            class="flex items-center justify-center mb-6 transition-transform duration-300 w-14 h-14 bg-primary/20 rounded-2xl text-primary group-hover:scale-110">
+            <i class="text-3xl bx bx-news"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Paper</h3>
-          <p class="text-slate-400 font-light text-sm">Thick cardboard, HVS paper, used newspapers, and magazines.</p>
+          <h3 class="mb-2 text-xl font-bold text-white">Paper</h3>
+          <p class="text-sm font-light text-slate-400">Thick cardboard, HVS paper, used newspapers, and magazines.</p>
         </div>
 
-        <!-- Logam -->
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
-          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 shadow-xl group">
+          class="p-8 transition-all duration-300 border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 hover:border-primary/50 group">
           <div
-            class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i class="bx bx-cog text-3xl"></i>
+            class="flex items-center justify-center mb-6 transition-transform duration-300 w-14 h-14 bg-primary/20 rounded-2xl text-primary group-hover:scale-110">
+            <i class="text-3xl bx bx-cog"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Metal</h3>
-          <p class="text-slate-400 font-light text-sm">Aluminum drink cans, old iron, and copper.</p>
+          <h3 class="mb-2 text-xl font-bold text-white">Metal</h3>
+          <p class="text-sm font-light text-slate-400">Aluminum drink cans, old iron, and copper.</p>
         </div>
 
-        <!-- Kaca -->
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 shadow-xl group">
+          class="p-8 transition-all duration-300 border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 hover:border-primary/50 group">
           <div
-            class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i class="bx bx-drink text-3xl"></i>
+            class="flex items-center justify-center mb-6 transition-transform duration-300 w-14 h-14 bg-primary/20 rounded-2xl text-primary group-hover:scale-110">
+            <i class="text-3xl bx bx-drink"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Glass</h3>
-          <p class="text-slate-400 font-light text-sm">
+          <h3 class="mb-2 text-xl font-bold text-white">Glass</h3>
+          <p class="text-sm font-light text-slate-400">
             Syrup bottles, soy sauce bottles, and clean glass fragments.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- 3. Price List & Calculator Section -->
-    <section id="prices" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <!-- Price List & Calculator Section -->
+    <section id="prices" class="px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid items-start grid-cols-1 gap-12 lg:grid-cols-2">
         <!-- Price List Table -->
         <div data-aos="fade-up" data-aos-duration="1000"
-          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
+          class="p-8 border shadow-2xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl md:p-10">
           <div class="flex items-center gap-3 mb-8">
-            <i class="bx bx-list-ul text-3xl text-primary"></i>
+            <i class="text-3xl bx bx-list-ul text-primary"></i>
             <h3 class="text-2xl font-bold text-white">Latest Price List</h3>
           </div>
           <d iv class="overflow-x-auto">
             <table class="w-full text-left border-collapse">
               <thead>
                 <tr class="border-b border-white/10">
-                  <th class="pb-4 text-slate-300 font-semibold">Type of Waste</th>
-                  <th class="pb-4 text-slate-300 font-semibold text-right">Price / Kg</th>
+                  <th class="pb-4 font-semibold text-slate-300">Type of Waste</th>
+                  <th class="pb-4 font-semibold text-right text-slate-300">Price / Kg</th>
                 </tr>
               </thead>
-              <tbody class="text-slate-400 font-light">
-                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+              <tbody class="font-light text-slate-400">
+                <tr class="transition-colors border-b border-white/5 hover:bg-white/5">
                   <td class="py-4">Plastic (PET Bottle)</td>
-                  <td class="py-4 text-right font-medium text-emerald-300">Rp 3.500</td>
+                  <td class="py-4 font-medium text-right text-emerald-300">Rp 3.500</td>
                 </tr>
-                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <tr class="transition-colors border-b border-white/5 hover:bg-white/5">
                   <td class="py-4">Paper (Cardboard)</td>
-                  <td class="py-4 text-right font-medium text-emerald-300">Rp 2.000</td>
+                  <td class="py-4 font-medium text-right text-emerald-300">Rp 2.000</td>
                 </tr>
-                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <tr class="transition-colors border-b border-white/5 hover:bg-white/5">
                   <td class="py-4">Metal (Aluminum)</td>
-                  <td class="py-4 text-right font-medium text-emerald-300">Rp 8.000</td>
+                  <td class="py-4 font-medium text-right text-emerald-300">Rp 8.000</td>
                 </tr>
-                <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <tr class="transition-colors border-b border-white/5 hover:bg-white/5">
                   <td class="py-4">Metal (Old Iron)</td>
-                  <td class="py-4 text-right font-medium text-emerald-300">Rp 4.500</td>
+                  <td class="py-4 font-medium text-right text-emerald-300">Rp 4.500</td>
                 </tr>
-                <tr class="hover:bg-white/5 transition-colors">
+                <tr class="transition-colors hover:bg-white/5">
                   <td class="py-4">Glass (Bottle)</td>
-                  <td class="py-4 text-right font-medium text-emerald-300">Rp 1.000</td>
+                  <td class="py-4 font-medium text-right text-emerald-300">Rp 1.000</td>
                 </tr>
               </tbody>
             </table>
           </d>
-          <p class="text-xs text-slate-500 mt-6 italic">
+          <p class="mt-6 text-xs italic text-slate-500">
             *Prices may change at any time according to the market price of the collector.
           </p>
         </div>
 
         <!-- Calculator -->
         <div data-aos="fade-up" data-aos-duration="1000"
-          class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
-          <!-- Decor -->
-          <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl z-0"></div>
+          class="relative p-8 overflow-hidden border shadow-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border-white/20 rounded-3xl md:p-10">
+          <div class="absolute z-0 w-40 h-40 rounded-full -top-10 -right-10 bg-primary/20 blur-3xl"></div>
 
           <div class="relative z-10">
             <div class="flex items-center gap-3 mb-8">
-              <i class="bx bx-calculator text-3xl text-primary"></i>
+              <i class="text-3xl bx bx-calculator text-primary"></i>
               <h3 class="text-2xl font-bold text-white">Estimate Calculator</h3>
             </div>
-            <p class="text-slate-400 font-light mb-8">
+            <p class="mb-8 font-light text-slate-400">
               Calculate the potential earnings you can get from your waste deposit today.
             </p>
 
             <form id="calculator-form" class="space-y-6">
               <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Select Waste Type</label>
+                <label class="block mb-2 text-sm font-medium text-slate-300">Select Waste Type</label>
                 <div class="relative">
                   <select id="waste-type"
-                    class="w-full bg-black/40 border border-white/10 text-white text-base rounded-xl p-4 appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all cursor-pointer">
+                    class="w-full p-4 text-base text-white transition-all border appearance-none cursor-pointer bg-black/40 border-white/10 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
                     <option value="" disabled selected>-- Select Type --</option>
                     <option value="3500">Plastic (PET Bottle) - Rp 3.500/kg</option>
                     <option value="2000">Paper (Cardboard) - Rp 2.000/kg</option>
@@ -338,18 +331,18 @@
                     <option value="1000">Glass (Bottle) - Rp 1.000/kg</option>
                   </select>
                   <i
-                    class="bx bx-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-2xl text-slate-400 pointer-events-none"></i>
+                    class="absolute text-2xl -translate-y-1/2 pointer-events-none bx bx-chevron-down right-4 top-1/2 text-slate-400"></i>
                 </div>
               </div>
 
               <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Waste Weight (Kg)</label>
+                <label class="block mb-2 text-sm font-medium text-slate-300">Waste Weight (Kg)</label>
                 <input type="number" id="waste-weight" min="0" step="0.1" placeholder="Example: 5.5"
-                  class="w-full bg-black/40 border border-white/10 text-white text-base rounded-xl p-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" />
+                  class="w-full p-4 text-base text-white transition-all border bg-black/40 border-white/10 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" />
               </div>
 
-              <div class="pt-4 border-t border-white/10 mt-6">
-                <label class="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Estimated
+              <div class="pt-4 mt-6 border-t border-white/10">
+                <label class="block mb-2 text-sm font-medium tracking-widest uppercase text-slate-400">Estimated
                   Income</label>
                 <div
                   class="bg-black/60 rounded-xl p-6 flex items-center justify-between border border-primary/30 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
@@ -365,66 +358,66 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-black/40 backdrop-blur-2xl border-t border-white/10 pt-20 pb-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 lg:mb-24">
+  <footer class="pt-20 pb-10 border-t bg-black/40 backdrop-blur-2xl border-white/10">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 lg:mb-24">
         <div class="md:col-span-5 lg:col-span-4">
           <div class="flex items-center gap-2 mb-6 text-white">
-            <i class="bx bxs-leaf text-primary text-4xl"></i>
-            <span class="font-black text-3xl tracking-tight">RE-<span class="text-primary">EARTH</span></span>
+            <i class="text-4xl bx bxs-leaf text-primary"></i>
+            <span class="text-3xl font-black tracking-tight">RE-<span class="text-primary">EARTH</span></span>
           </div>
-          <p class="text-slate-400 leading-relaxed mb-8 pr-4 font-light">
+          <p class="pr-4 mb-8 font-light leading-relaxed text-slate-400">
             A registered non-profit organization dedicated to healing the planet. Turn your daily actions into
             valuable resources.
           </p>
-          <div class="space-y-4 mb-8">
+          <div class="mb-8 space-y-4">
             <div class="flex items-start gap-3 text-slate-300">
-              <i class="bx bx-map text-xl text-primary shrink-0 mt-1"></i>
+              <i class="mt-1 text-xl bx bx-map text-primary shrink-0"></i>
               <span class="font-light">123 Green Valley Road,<br />Eco City, EC 90210</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
-              <i class="bx bx-envelope text-xl text-primary shrink-0"></i>
+              <i class="text-xl bx bx-envelope text-primary shrink-0"></i>
               <span class="font-light">hello@re-earth.org</span>
             </div>
           </div>
         </div>
 
-        <div class="md:col-span-7 lg:col-span-8 flex flex-col h-full justify-between">
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-12">
-            <!-- Quick Links -->
+        <div class="flex flex-col justify-between h-full md:col-span-7 lg:col-span-8">
+          <div class="grid grid-cols-2 gap-8 mb-12 sm:grid-cols-3">
+
             <div>
-              <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Menu</h4>
-              <ul class="space-y-4 text-slate-400 font-light">
-                <li><a href="home.html" class="hover:text-primary transition-colors">Home</a></li>
-                <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+              <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Menu</h4>
+              <ul class="space-y-4 font-light text-slate-400">
+                <li><a href="home.html" class="transition-colors hover:text-primary">Home</a></li>
+                <li><a href="about.html" class="transition-colors hover:text-primary">About Us</a></li>
+                <li><a href="services.html" class="transition-colors hover:text-primary">Services</a></li>
               </ul>
             </div>
-            <!-- Resources -->
+
             <div>
-              <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Other Links</h4>
-              <ul class="space-y-4 text-slate-400 font-light">
-                <li><a href="home.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="about.html#team" class="hover:text-primary transition-colors">Our Team</a></li>
-                <li><a href="services.html#prices" class="hover:text-primary transition-colors">Prices</a></li>
+              <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Other Links</h4>
+              <ul class="space-y-4 font-light text-slate-400">
+                <li><a href="home.html#faq" class="transition-colors hover:text-primary">FAQ</a></li>
+                <li><a href="about.html#team" class="transition-colors hover:text-primary">Our Team</a></li>
+                <li><a href="services.html#prices" class="transition-colors hover:text-primary">Prices</a></li>
               </ul>
             </div>
-            <!-- Social Media Links -->
+
             <div class="col-span-2 sm:col-span-1">
-              <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Follow Us</h4>
-              <p class="text-slate-400 text-sm font-light mb-6">Stay connected with our community updates.</p>
+              <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Follow Us</h4>
+              <p class="mb-6 text-sm font-light text-slate-400">Stay connected with our community updates.</p>
               <div class="flex items-center gap-4">
                 <a href="#"
-                  class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                  <i class="bx bxl-facebook text-lg group-hover:scale-110 transition-transform"></i>
+                  class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                  <i class="text-lg transition-transform bx bxl-facebook group-hover:scale-110"></i>
                 </a>
                 <a href="#"
-                  class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                  <i class="bx bxl-twitter text-lg group-hover:scale-110 transition-transform"></i>
+                  class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                  <i class="text-lg transition-transform bx bxl-twitter group-hover:scale-110"></i>
                 </a>
                 <a href="#"
-                  class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                  <i class="bx bxl-instagram text-lg group-hover:scale-110 transition-transform"></i>
+                  class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                  <i class="text-lg transition-transform bx bxl-instagram group-hover:scale-110"></i>
                 </a>
               </div>
             </div>
@@ -433,12 +426,12 @@
       </div>
 
       <div
-        class="pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-slate-500 text-sm font-light tracking-wide">
+        class="flex flex-col items-center justify-between gap-4 pt-8 text-center border-t border-white/10 md:flex-row">
+        <p class="text-sm font-light tracking-wide text-slate-500">
           &copy; 2026 Re-Earth Organization. All rights reserved.
         </p>
-        <p class="text-slate-500 text-sm flex items-center gap-1 font-light tracking-wide">
-          Made with <i class="bx bxs-heart text-base text-primary"></i> for the planet.
+        <p class="flex items-center gap-1 text-sm font-light tracking-wide text-slate-500">
+          Made with <i class="text-base bx bxs-heart text-primary"></i> for the planet.
         </p>
       </div>
     </div>

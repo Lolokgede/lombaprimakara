@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Re-Earth</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Boxicons CSS -->
     <link href='css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Tailwind CSS -->
     <script src="js/tailwind.js"></script>
 
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -23,90 +27,93 @@
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#10b981', // emerald-500
+                        primary: '#10b981',
                     }
                 }
             }
         }
     </script>
-
+    
+    <!-- Aos -->
     <link rel="stylesheet" href="AOS-v2.3.2/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="font-sans antialiased text-slate-200 selection:bg-primary selection:text-white min-h-screen relative">
-
+<body class="relative min-h-screen font-sans antialiased text-slate-200 selection:bg-primary selection:text-white">
+    <!-- Background -->
     <div class="fixed inset-0 z-[-1]">
-        <img src="img/bg-img.avif" alt="Dark Forest Background" class="w-full h-full object-cover" />
+        <img src="img/bg-img.avif" alt="Dark Forest Background" class="object-cover w-full h-full" />
         <div class="absolute inset-0 bg-slate-950/70"></div>
         <div
             class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-950/50 to-slate-950/90">
         </div>
     </div>
 
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-black/20 border-b border-white/10"
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 w-full transition-all duration-300 border-b backdrop-blur-md bg-black/20 border-white/10"
         id="navbar">
-        <div class="max-w-7xl mx-auto flex items-center justify-between p-4 px-6 md:px-10 h-20">
-            <div class="text-2xl font-black text-white flex items-center gap-2">
-                <i class="bx bxs-leaf text-primary text-3xl"></i>
+        <div class="flex items-center justify-between h-20 p-4 px-6 mx-auto max-w-7xl md:px-10">
+            <div class="flex items-center gap-2 text-2xl font-black text-white">
+                <i class="text-3xl bx bxs-leaf text-primary"></i>
                 <h1>RE-<span class="text-primary">EARTH</span></h1>
             </div>
 
-            <div class="hidden md:flex items-center gap-10 font-medium text-slate-300">
+            <!-- Desktop  -->
+            <div class="items-center hidden gap-10 font-medium md:flex text-slate-300">
                 <div class="flex items-center gap-1">
-                    <a href="home.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="home.html" class="transition-colors hover:text-primary">Home</a>
                     <div class="relative group">
-                        <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-                            <i class="bx bx-chevron-down text-lg"></i>
+                        <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+                            <i class="text-lg bx bx-chevron-down"></i>
                         </span>
-                        <div class="absolute top-full right-0 hidden group-hover:block pt-5">
+                        <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
                             <div
-                                class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+                                class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                                 <a href="home.html#faq"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">FAQ</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">FAQ</a>
                                 <a href="home.html#testimonials"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Testimonials</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Testimonials</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-1">
-                    <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="about.html" class="transition-colors hover:text-primary">About</a>
                     <div class="relative group">
-                        <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-                            <i class="bx bx-chevron-down text-lg"></i>
+                        <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+                            <i class="text-lg bx bx-chevron-down"></i>
                         </span>
-                        <div class="absolute top-full right-0 hidden group-hover:block pt-5">
+                        <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
                             <div
-                                class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+                                class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                                 <a href="about.html#journey"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Journey</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Journey</a>
                                 <a href="about.html#vision"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Vision</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Vision</a>
                                 <a href="about.html#mission"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Mission</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Mission</a>
                                 <a href="about.html#team"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Team</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Team</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-1">
-                    <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="services.html" class="transition-colors hover:text-primary">Services</a>
                     <div class="relative group">
-                        <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
-                            <i class="bx bx-chevron-down text-lg"></i>
+                        <span class="block transition-transform duration-300 cursor-pointer group-hover:rotate-180">
+                            <i class="text-lg bx bx-chevron-down"></i>
                         </span>
-                        <div class="absolute top-full right-0 hidden group-hover:block pt-5">
+                        <div class="absolute right-0 hidden pt-5 top-full group-hover:block">
                             <div
-                                class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
+                                class="w-32 py-2 border shadow-2xl bg-slate-900/90 backdrop-blur-xl rounded-xl border-white/10">
                                 <a href="services.html#types"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Waste
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Waste
                                     Types</a>
                                 <a href="services.html#prices"
-                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Prices</a>
+                                    class="flex items-center gap-2 px-4 py-4 text-sm transition-colors text-slate-300 hover:bg-white/10 hover:text-white">Prices</a>
                             </div>
                         </div>
                     </div>
@@ -120,41 +127,41 @@
                 </a>
             </div>
 
-            <div id="nav-open" class="md:hidden text-white hover:text-primary transition-colors cursor-pointer">
-                <i class="bx bx-menu bx-remove-padding text-4xl"></i>
+            <div id="nav-open" class="text-white transition-colors cursor-pointer md:hidden hover:text-primary">
+                <i class="text-4xl bx bx-menu bx-remove-padding"></i>
             </div>
         </div>
     </nav>
 
     <nav id="nav-mobile"
         class="translate-x-full fixed z-[60] top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950 border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
-        <div class="px-6 py-6 flex items-center justify-between border-b border-white/10">
-            <h2 class="font-bold text-xl tracking-tight">Menu</h2>
+        <div class="flex items-center justify-between px-6 py-6 border-b border-white/10">
+            <h2 class="text-xl font-bold tracking-tight">Menu</h2>
             <div id="nav-close"
-                class="cursor-pointer text-slate-400 hover:text-white transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10 flex items-center justify-center">
-                <i class="bx bx-x text-2xl"></i>
+                class="flex items-center justify-center p-2 transition-colors rounded-full cursor-pointer text-slate-400 hover:text-white bg-white/5 hover:bg-white/10">
+                <i class="text-2xl bx bx-x"></i>
             </div>
         </div>
 
-        <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
+        <div class="flex flex-col flex-1 gap-8 px-6 py-8 overflow-y-auto">
             <div class="flex flex-col gap-4">
                 <a href="home.html"
-                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Home</a>
+                    class="text-2xl font-semibold transition-colors text-slate-300 hover:text-primary">Home</a>
                 <a href="about.html"
-                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">About</a>
+                    class="text-2xl font-semibold transition-colors text-slate-300 hover:text-primary">About</a>
                 <a href="services.html"
-                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Services</a>
-                <a href="contact.html" class="text-2xl font-semibold text-primary transition-colors">Contact</a>
+                    class="text-2xl font-semibold transition-colors text-slate-300 hover:text-primary">Services</a>
+                <a href="contact.html" class="text-2xl font-semibold transition-colors text-primary">Contact</a>
             </div>
 
             <hr class="border-white/10" />
 
             <div class="flex flex-col gap-4">
-                <span class="text-sm font-medium text-slate-500 uppercase tracking-wider">Other Links</span>
+                <span class="text-sm font-medium tracking-wider uppercase text-slate-500">Other Links</span>
                 <a href="home.html#faq"
-                    class="text-lg font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
+                    class="text-lg font-medium transition-colors text-slate-300 hover:text-white">FAQ</a>
                 <a href="about.html#team"
-                    class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Our Team</a>
+                    class="text-lg font-medium transition-colors text-slate-300 hover:text-white">Our Team</a>
             </div>
         </div>
 
@@ -168,46 +175,46 @@
     <div id="nav-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[55] hidden transition-opacity opacity-0">
     </div>
 
-    <main class="pt-24 pb-12 w-full overflow-hidden">
+    <main class="w-full pt-24 pb-12 overflow-hidden">
 
-        <section class="max-w-7xl mx-auto mt-12 px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-            <div class="text-center max-w-3xl mx-auto z-10">
+        <section class="px-4 pt-16 pb-8 mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
+            <div class="z-10 max-w-3xl mx-auto text-center">
                 <span data-aos="fade-up" data-aos-duration="1000"
                     class="text-sm inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary font-semibold tracking-widest uppercase mb-6 shadow-xl">
                     Contact Us
                 </span>
                 <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
-                    class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-4 leading-tight drop-shadow-lg">
+                    class="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl drop-shadow-lg">
                     Let's Work Together <br /> For <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Our
                         Planet.</span>
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
-                    class="text-base md:text-lg text-slate-300 font-light leading-relaxed drop-shadow-md">
+                    class="text-base font-light leading-relaxed md:text-lg text-slate-300 drop-shadow-md">
                     Have questions, ideas, or want to collaborate? We are always ready to listen. Please fill out the
                     form below or reach out to us through the available channels.
                 </p>
             </div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+        <section class="px-4 py-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid items-stretch grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
 
                 <div data-aos="fade-up" data-aos-duration="1000"
-                    class="lg:col-span-7 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl h-full flex flex-col">
+                    class="flex flex-col h-full p-8 border shadow-2xl lg:col-span-7 bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl md:p-10">
                     <div class="mb-8">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Send a Message</h2>
-                        <p class="text-slate-400 font-light text-sm">We will get back to you as soon as possible.</p>
+                        <h2 class="mb-2 text-2xl font-bold text-white md:text-3xl">Send a Message</h2>
+                        <p class="text-sm font-light text-slate-400">We will get back to you as soon as possible.</p>
                     </div>
 
                     <form action="#" method="POST"
                         onsubmit="event.preventDefault(); alert('Message sent successfully!');"
-                        class="flex-1 flex flex-col gap-6">
+                        class="flex flex-col flex-1 gap-6">
 
                         <div
-                            class="relative z-0 w-full group bg-black/40 border border-white/10 rounded-xl overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all">
+                            class="relative z-0 w-full overflow-hidden transition-all border group bg-black/40 border-white/10 rounded-xl focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
                             <input type="text" name="name" id="name"
-                                class="block px-5 pb-3 pt-6 w-full text-sm text-white bg-transparent appearance-none focus:outline-none focus:ring-0 peer"
+                                class="block w-full px-5 pt-6 pb-3 text-sm text-white bg-transparent appearance-none focus:outline-none focus:ring-0 peer"
                                 placeholder=" " required />
                             <label for="name"
                                 class="absolute text-sm text-slate-400 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-5 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 cursor-text">Full
@@ -215,9 +222,9 @@
                         </div>
 
                         <div
-                            class="relative z-0 w-full group bg-black/40 border border-white/10 rounded-xl overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all">
+                            class="relative z-0 w-full overflow-hidden transition-all border group bg-black/40 border-white/10 rounded-xl focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
                             <input type="email" name="email" id="email"
-                                class="block px-5 pb-3 pt-6 w-full text-sm text-white bg-transparent appearance-none focus:outline-none focus:ring-0 peer"
+                                class="block w-full px-5 pt-6 pb-3 text-sm text-white bg-transparent appearance-none focus:outline-none focus:ring-0 peer"
                                 placeholder=" " required />
                             <label for="email"
                                 class="absolute text-sm text-slate-400 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-5 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 cursor-text">Email
@@ -225,9 +232,9 @@
                         </div>
 
                         <div
-                            class="relative z-0 w-full group bg-black/40 border border-white/10 rounded-xl overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-all mb-4">
+                            class="relative z-0 w-full mb-4 overflow-hidden transition-all border group bg-black/40 border-white/10 rounded-xl focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
                             <textarea name="message" id="message" rows="5"
-                                class="block px-5 pb-3 pt-6 w-full text-sm text-white bg-transparent appearance-none focus:outline-none focus:ring-0 peer resize-none"
+                                class="block w-full px-5 pt-6 pb-3 text-sm text-white bg-transparent appearance-none resize-none focus:outline-none focus:ring-0 peer"
                                 placeholder=" " required></textarea>
                             <label for="message"
                                 class="absolute text-sm text-slate-400 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-5 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 cursor-text">Your
@@ -236,70 +243,70 @@
 
                         <button type="submit"
                             class="w-full bg-primary hover:bg-emerald-400 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)] mt-auto">
-                            Send Message <i class='bx bx-send ml-2'></i>
+                            Send Message <i class='ml-2 bx bx-send'></i>
                         </button>
                     </form>
                 </div>
 
-                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-6 h-full">
+                <div class="grid h-full grid-cols-1 gap-4 lg:col-span-5 sm:grid-cols-2 lg:grid-cols-1 lg:gap-6">
 
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
-                        class="sm:col-span-2 lg:col-span-1 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors shadow-xl flex flex-col justify-center relative overflow-hidden group">
+                        class="relative flex flex-col justify-center p-8 overflow-hidden transition-colors border shadow-xl sm:col-span-2 lg:col-span-1 bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 group">
                         <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150">
+                            class="absolute top-0 right-0 w-32 h-32 -mt-10 -mr-10 transition-transform rounded-full bg-primary/10 blur-3xl group-hover:scale-150">
                         </div>
-                        <i class="bx bx-map-alt text-4xl text-primary mb-4 relative z-10"></i>
-                        <h4 class="text-white font-bold text-xl relative z-10">Headquarters</h4>
-                        <p class="text-slate-400 font-light mt-2 leading-relaxed relative z-10">
+                        <i class="relative z-10 mb-4 text-4xl bx bx-map-alt text-primary"></i>
+                        <h4 class="relative z-10 text-xl font-bold text-white">Headquarters</h4>
+                        <p class="relative z-10 mt-2 font-light leading-relaxed text-slate-400">
                             123 Green Valley Road,<br />
                             Eco City, EC 90210
                         </p>
                     </div>
 
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6 sm:col-span-2 lg:col-span-1 w-full">
+                        class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 lg:gap-6 sm:col-span-2 lg:col-span-1">
                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
-                            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:bg-white/10 transition-colors shadow-xl flex flex-col justify-center items-start group">
+                            class="flex flex-col items-start justify-center p-6 transition-colors border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 group">
                             <div
-                                class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                                <i class="bx bx-envelope text-2xl text-primary"></i>
+                                class="flex items-center justify-center w-12 h-12 mb-4 transition-colors border bg-white/5 border-white/10 rounded-xl group-hover:bg-primary/20">
+                                <i class="text-2xl bx bx-envelope text-primary"></i>
                             </div>
-                            <h4 class="text-white font-bold text-lg">Email</h4>
+                            <h4 class="text-lg font-bold text-white">Email</h4>
                             <a href="mailto:hello@re-earth.org"
-                                class="text-slate-400 font-light mt-1 hover:text-primary transition-colors text-sm break-all">hello@re-earth.org</a>
+                                class="mt-1 text-sm font-light break-all transition-colors text-slate-400 hover:text-primary">hello@re-earth.org</a>
                         </div>
 
                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:bg-white/10 transition-colors shadow-xl flex flex-col justify-center items-start group">
+                            class="flex flex-col items-start justify-center p-6 transition-colors border shadow-xl bg-white/5 backdrop-blur-xl border-white/10 rounded-3xl hover:bg-white/10 group">
                             <div
-                                class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                                <i class="bx bx-phone text-2xl text-primary"></i>
+                                class="flex items-center justify-center w-12 h-12 mb-4 transition-colors border bg-white/5 border-white/10 rounded-xl group-hover:bg-primary/20">
+                                <i class="text-2xl bx bx-phone text-primary"></i>
                             </div>
-                            <h4 class="text-white font-bold text-lg">Phone</h4>
+                            <h4 class="text-lg font-bold text-white">Phone</h4>
                             <a href="tel:+6281234567890"
-                                class="text-slate-400 font-light mt-1 hover:text-primary transition-colors text-sm">+62
+                                class="mt-1 text-sm font-light transition-colors text-slate-400 hover:text-primary">+62
                                 812-3456-7890</a>
                         </div>
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
-                        class="sm:col-span-2 lg:col-span-1 bg-gradient-to-r from-primary/10 to-transparent backdrop-blur-xl border border-primary/20 rounded-3xl p-8 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+                        class="flex flex-col items-center justify-between gap-6 p-8 border shadow-xl sm:col-span-2 lg:col-span-1 bg-gradient-to-r from-primary/10 to-transparent backdrop-blur-xl border-primary/20 rounded-3xl sm:flex-row">
                         <div class="text-center sm:text-left">
-                            <h4 class="text-white font-bold text-xl">Social Media</h4>
-                            <p class="text-slate-400 font-light text-sm mt-1">Stay connected with our updates.</p>
+                            <h4 class="text-xl font-bold text-white">Social Media</h4>
+                            <p class="mt-1 text-sm font-light text-slate-400">Stay connected with our updates.</p>
                         </div>
                         <div class="flex items-center gap-3">
                             <a href="#"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg hover:-translate-y-1">
-                                <i class="bx bxl-facebook text-xl"></i>
+                                class="flex items-center justify-center w-12 h-12 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1">
+                                <i class="text-xl bx bxl-facebook"></i>
                             </a>
                             <a href="#"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg hover:-translate-y-1">
-                                <i class="bx bxl-twitter text-xl"></i>
+                                class="flex items-center justify-center w-12 h-12 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1">
+                                <i class="text-xl bx bxl-twitter"></i>
                             </a>
                             <a href="#"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg hover:-translate-y-1">
-                                <i class="bx bxl-instagram text-xl"></i>
+                                class="flex items-center justify-center w-12 h-12 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1">
+                                <i class="text-xl bx bxl-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -310,69 +317,69 @@
 
     </main>
 
-    <footer class="bg-black/40 backdrop-blur-2xl border-t border-white/10 pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 lg:mb-24">
+    <footer class="pt-20 pb-10 border-t bg-black/40 backdrop-blur-2xl border-white/10">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 lg:mb-24">
                 <div class="md:col-span-5 lg:col-span-4">
                     <div class="flex items-center gap-2 mb-6 text-white">
-                        <i class="bx bxs-leaf text-primary text-4xl"></i>
-                        <span class="font-black text-3xl tracking-tight">RE-<span
+                        <i class="text-4xl bx bxs-leaf text-primary"></i>
+                        <span class="text-3xl font-black tracking-tight">RE-<span
                                 class="text-primary">EARTH</span></span>
                     </div>
-                    <p class="text-slate-400 leading-relaxed mb-8 pr-4 font-light">
+                    <p class="pr-4 mb-8 font-light leading-relaxed text-slate-400">
                         A registered non-profit organization dedicated to healing the planet. Turn your daily actions
                         into valuable resources.
                     </p>
-                    <div class="space-y-4 mb-8">
+                    <div class="mb-8 space-y-4">
                         <div class="flex items-start gap-3 text-slate-300">
-                            <i class="bx bx-map text-xl text-primary shrink-0 mt-1"></i>
+                            <i class="mt-1 text-xl bx bx-map text-primary shrink-0"></i>
                             <span class="font-light">123 Green Valley Road,<br>Eco City, EC 90210</span>
                         </div>
                         <div class="flex items-center gap-3 text-slate-300">
-                            <i class="bx bx-envelope text-xl text-primary shrink-0"></i>
+                            <i class="text-xl bx bx-envelope text-primary shrink-0"></i>
                             <span class="font-light">hello@re-earth.org</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="md:col-span-7 lg:col-span-8 flex flex-col h-full justify-between">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-12">
+                <div class="flex flex-col justify-between h-full md:col-span-7 lg:col-span-8">
+                    <div class="grid grid-cols-2 gap-8 mb-12 sm:grid-cols-3">
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Menu</h4>
-                            <ul class="space-y-4 text-slate-400 font-light">
-                                <li><a href="home.html" class="hover:text-primary transition-colors">Home</a></li>
-                                <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
-                                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                            <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Menu</h4>
+                            <ul class="space-y-4 font-light text-slate-400">
+                                <li><a href="home.html" class="transition-colors hover:text-primary">Home</a></li>
+                                <li><a href="about.html" class="transition-colors hover:text-primary">About Us</a></li>
+                                <li><a href="services.html" class="transition-colors hover:text-primary">Services</a>
                                 </li>
-                                <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                                <li><a href="contact.html" class="transition-colors hover:text-primary">Contact</a></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Other Links</h4>
-                            <ul class="space-y-4 text-slate-400 font-light">
-                                <li><a href="home.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
-                                <li><a href="about.html#team" class="hover:text-primary transition-colors">Our Team</a>
+                            <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Other Links</h4>
+                            <ul class="space-y-4 font-light text-slate-400">
+                                <li><a href="home.html#faq" class="transition-colors hover:text-primary">FAQ</a></li>
+                                <li><a href="about.html#team" class="transition-colors hover:text-primary">Our Team</a>
                                 </li>
                                 <li><a href="services.html#prices"
-                                        class="hover:text-primary transition-colors">Prices</a></li>
+                                        class="transition-colors hover:text-primary">Prices</a></li>
                             </ul>
                         </div>
                         <div class="col-span-2 sm:col-span-1">
-                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Follow Us</h4>
-                            <p class="text-slate-400 text-sm font-light mb-6">Stay connected with our community updates.
+                            <h4 class="mb-6 text-lg font-bold tracking-wider text-white uppercase">Follow Us</h4>
+                            <p class="mb-6 text-sm font-light text-slate-400">Stay connected with our community updates.
                             </p>
                             <div class="flex items-center gap-4">
                                 <a href="#"
-                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                                    <i class="bx bxl-facebook text-lg group-hover:scale-110 transition-transform"></i>
+                                    class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                                    <i class="text-lg transition-transform bx bxl-facebook group-hover:scale-110"></i>
                                 </a>
                                 <a href="#"
-                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                                    <i class="bx bxl-twitter text-lg group-hover:scale-110 transition-transform"></i>
+                                    class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                                    <i class="text-lg transition-transform bx bxl-twitter group-hover:scale-110"></i>
                                 </a>
                                 <a href="#"
-                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                                    <i class="bx bxl-instagram text-lg group-hover:scale-110 transition-transform"></i>
+                                    class="flex items-center justify-center w-10 h-10 transition-all duration-300 border rounded-full shadow-lg bg-white/5 border-white/10 text-slate-300 hover:bg-primary hover:text-white hover:border-primary group">
+                                    <i class="text-lg transition-transform bx bxl-instagram group-hover:scale-110"></i>
                                 </a>
                             </div>
                         </div>
@@ -381,12 +388,12 @@
             </div>
 
             <div
-                class="pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 text-sm font-light tracking-wide">
+                class="flex flex-col items-center justify-between gap-4 pt-8 text-center border-t border-white/10 md:flex-row">
+                <p class="text-sm font-light tracking-wide text-slate-500">
                     &copy; 2026 Re-Earth Organization. All rights reserved.
                 </p>
-                <p class="text-slate-500 text-sm flex items-center gap-1 font-light tracking-wide">
-                    Made with <i class="bx bxs-heart text-base text-primary"></i> for the planet.
+                <p class="flex items-center gap-1 text-sm font-light tracking-wide text-slate-500">
+                    Made with <i class="text-base bx bxs-heart text-primary"></i> for the planet.
                 </p>
             </div>
         </div>
