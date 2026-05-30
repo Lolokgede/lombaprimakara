@@ -11,11 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='css/boxicons.min.css' rel='stylesheet'>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.js"></script>
 
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#10b981', // emerald-500
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="AOS-v2.3.2/aos.css" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,9 +39,8 @@
 
     <!-- Fixed Global Background -->
     <div class="fixed inset-0 z-[-1]">
-        <!-- Beautiful Dark Forest Background -->
-        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=2500"
-            alt="Dark Forest Background" class="w-full h-full object-cover" />
+        <!-- foto pokoknya -->
+        <img src="img/bg-img.avif" alt="Dark Forest Background" class="w-full h-full object-cover" />
         <!-- Gradient Overlay to ensure text readability -->
         <div class="absolute inset-0 bg-slate-950/70"></div>
         <!-- Extra radial gradient for center focus -->
@@ -34,6 +49,7 @@
         </div>
     </div>
 
+    <!-- Glass Navbar -->
     <nav class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-black/20 border-b border-white/10"
         id="navbar">
         <div class="max-w-7xl mx-auto flex items-center justify-between p-4 px-6 md:px-10 h-20">
@@ -45,7 +61,6 @@
 
             <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-10 font-medium text-slate-300">
-                <!-- Home -->
                 <div class="flex items-center gap-1">
                     <a href="home.html" class="hover:text-primary transition-colors">Home</a>
                     <div class="relative group">
@@ -55,14 +70,15 @@
                         <div class="absolute top-full right-0 hidden group-hover:block pt-5">
                             <div
                                 class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
-                                <a href="#"
-                                    class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">FAQ</a>
+                                <a href="home.html#faq"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">FAQ</a>
+                                <a href="home.html#testimonials"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Testimonials</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- About -->
                 <div class="flex items-center gap-1">
                     <a href="about.html" class="text-primary transition-colors">About</a>
                     <div class="relative group">
@@ -72,17 +88,25 @@
                         <div class="absolute top-full right-0 hidden group-hover:block pt-5">
                             <div
                                 class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
-                                <a href="#"
-                                    class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Our
+                                <a href="about.html#journey"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                                    Journey</a>
+                                <a href="about.html#vision"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                                    Vision</a>
+                                <a href="about.html#mission"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
+                                    Mission</a>
+                                <a href="about.html#team"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
                                     Team</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Program -->
                 <div class="flex items-center gap-1">
-                    <a href="program.html" class="hover:text-primary transition-colors">Program</a>
+                    <a href="services.html" class="hover:text-primary transition-colors">Services</a>
                     <div class="relative group">
                         <span class="group-hover:rotate-180 transition-transform duration-300 block cursor-pointer">
                             <i class="bx bx-chevron-down text-lg"></i>
@@ -90,8 +114,11 @@
                         <div class="absolute top-full right-0 hidden group-hover:block pt-5">
                             <div
                                 class="bg-slate-900/90 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 py-2 w-32">
-                                <a href="#"
-                                    class="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Prices</a>
+                                <a href="services.html#types"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Waste
+                                    Types</a>
+                                <a href="services.html#prices"
+                                    class="flex items-center gap-2 px-4 py-4 text-sm text-slate-300 hover:bg-white/10 hover:text-white transition-colors">Prices</a>
                             </div>
                         </div>
                     </div>
@@ -108,14 +135,14 @@
 
             <!-- Mobile Menu Toggle -->
             <div id="nav-open" class="md:hidden text-white hover:text-primary transition-colors cursor-pointer">
-                <i class="bx bx-menu text-4xl"></i>
+                <i class="bx bx-menu bx-remove-padding text-4xl"></i>
             </div>
         </div>
     </nav>
 
     <!-- Glass Mobile Menu Drawer -->
     <nav id="nav-mobile"
-        class="translate-x-full fixed top-0 right-0 w-[80%] max-w-sm h-full z-[60] bg-slate-950/60 backdrop-blur-2xl border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
+        class="translate-x-full fixed z-[60] top-0 right-0 w-[80%] max-w-sm h-full bg-slate-950 border-l border-white/10 text-white flex flex-col shadow-2xl transition-transform duration-500 ease-in-out">
         <div class="px-6 py-6 flex items-center justify-between border-b border-white/10">
             <h2 class="font-bold text-xl tracking-tight">Menu</h2>
             <div id="nav-close"
@@ -127,19 +154,23 @@
         <div class="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8">
             <div class="flex flex-col gap-4">
                 <a href="home.html"
-                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Home</a>
+                    class="text-2xl font-semibold text-slate-300  hover:text-primary transition-colors">Home</a>
                 <a href="about.html" class="text-2xl font-semibold text-primary transition-colors">About</a>
-                <a href="program.html"
-                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Program</a>
+                <a href="services.html"
+                    class="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors">Services</a>
             </div>
 
             <hr class="border-white/10" />
 
             <div class="flex flex-col gap-4">
                 <span class="text-sm font-medium text-slate-500 uppercase tracking-wider">Other Links</span>
-                <a href="#" class="text-lg font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
-                <a href="#" class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Our Team</a>
-                <a href="#" class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Prices</a>
+
+                <a href="home.html#faq"
+                    class="text-lg font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
+                <a href="about.html#team"
+                    class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Our Team</a>
+                <a href="services.html#prices"
+                    class="text-lg font-medium text-slate-300 hover:text-white transition-colors">Prices</a>
             </div>
         </div>
 
@@ -160,18 +191,18 @@
         <!-- 1. Hero Section (Glass) -->
         <section class="relative min-h-[50vh] flex items-center justify-center py-20 px-4">
             <div class="text-center max-w-4xl mx-auto z-10">
-                <span
+                <span data-aos="fade-up" data-aos-duration="1000"
                     class="inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary font-semibold tracking-widest uppercase text-xs mb-6 shadow-xl">
                     Who We Are
                 </span>
-                <h1
-                    class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                    class="text-[40px]  md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
                     Restoring Our Planet,<br><span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">One Step at a
                         Time.</span>
                 </h1>
-                <span id="about-hero-desc"
-                    class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+                <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+                    class="inline-block text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
                     We are a global community dedicated to protecting natural ecosystems, fighting climate change, and
                     building a sustainable future.
                 </span>
@@ -179,8 +210,8 @@
         </section>
 
         <!-- 2. Our Journey (Glass Panel) -->
-        <section class="py-12 px-4 sm:px-6 lg:px-8">
-            <div
+        <section id="journey" class="py-12 px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" data-aos-duration="1000"
                 class="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2.5rem] p-8 md:p-16 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] relative overflow-hidden">
                 <!-- Decorative glass glow -->
                 <div
@@ -191,14 +222,16 @@
                 </div>
 
                 <div class="text-center mb-10">
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="inline-flex items-center justify-center p-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl mb-6 text-primary shadow-lg">
                         <i class="bx bx-map-alt text-3xl"></i>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Journey</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+                        class="text-3xl md:text-4xl font-bold text-white">Our Journey</h2>
                 </div>
 
-                <div class="space-y-6 text-slate-300 text-lg leading-relaxed md:leading-loose font-light">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                    class="space-y-6 text-slate-300 text-base md:text-lg leading-relaxed md:leading-loose font-light">
                     <p>
                         Re-Earth began in 2015 as a small grassroots initiative formed by a group of passionate
                         environmentalists who refused to stand by as our local forests faced unprecedented
@@ -215,12 +248,12 @@
             </div>
         </section>
 
-        <!-- 3. Vision & Mission Section (Glass Grid) -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <!-- Our Vision -->
+        <section id="vision" class="pt-[150px] px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
 
-                <!-- Our Vision -->
-                <div
+
+                <div data-aos="fade-up" data-aos-duration="1000"
                     class="text-center max-w-4xl mx-auto mb-20 bg-gradient-to-b from-white/10 to-transparent backdrop-blur-md border border-white/10 rounded-3xl p-10 md:p-14 shadow-2xl">
                     <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our Vision</span>
                     <h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight drop-shadow-md">
@@ -228,16 +261,22 @@
                     </h3>
                 </div>
 
-                <!-- Our Mission -->
+
+            </div>
+        </section>
+
+        <!-- Our Mission -->
+        <section id="mission" class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
                 <div class="relative">
-                    <div class="text-center mb-12">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="text-center mb-12">
                         <span class="inline-block text-white text-2xl md:text-3xl font-bold">Our Mission</span>
                         <div class="h-1 w-20 bg-primary mx-auto mt-4 rounded-full"></div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         <!-- Mission Card 1 -->
-                        <div
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
                             class="bg-white/5 hover:bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group shadow-xl">
                             <div
                                 class="w-14 h-14 bg-white/10 border border-white/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner">
@@ -251,7 +290,7 @@
                         </div>
 
                         <!-- Mission Card 2 -->
-                        <div
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
                             class="bg-white/5 hover:bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group shadow-xl">
                             <div
                                 class="w-14 h-14 bg-white/10 border border-white/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner">
@@ -265,7 +304,7 @@
                         </div>
 
                         <!-- Mission Card 3 -->
-                        <div
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
                             class="bg-white/5 hover:bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group shadow-xl">
                             <div
                                 class="w-14 h-14 bg-white/10 border border-white/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner">
@@ -279,7 +318,7 @@
                         </div>
 
                         <!-- Mission Card 4 -->
-                        <div
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
                             class="bg-white/5 hover:bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group shadow-xl">
                             <div
                                 class="w-14 h-14 bg-white/10 border border-white/20 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner">
@@ -297,108 +336,91 @@
         </section>
 
         <!-- 4. The Founders Section (Glass Cards) -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="team" class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
-                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our Team</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Meet The Founders</h2>
-                    <p class="mt-4 text-slate-400 max-w-2xl mx-auto font-light">The passionate individuals who started
+                    <span data-aos="fade-up" data-aos-duration="1000"
+                        class="inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-primary font-semibold tracking-widest uppercase text-xs mb-2 shadow-xl">
+                        our team
+                    </span>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
+                        class="text-3xl md:text-4xl font-bold text-white">Meet The Founders</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                        class="mt-4 text-slate-400 max-w-2xl mx-auto font-light">The passionate individuals who
+                        started
                         it all, bringing together expertise in ecology, social work, and sustainability.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <!-- Profile Card 1 -->
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="group flex flex-col items-center p-8 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-white/30 shadow-2xl">
                         <div class="w-40 h-40 mb-6 relative">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400&h=400"
-                                alt="Sarah Jenkins"
+                            <img src="img/rangga foto.jpg" alt="rangga gtg"
                                 class="w-full h-full rounded-full object-cover border-[3px] border-white/20 shadow-lg">
                             <div
                                 class="absolute inset-0 rounded-full border-4 border-primary scale-105 opacity-0 group-hover:opacity-100 transition-all duration-500">
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-white">Sarah Jenkins</h3>
-                        <p class="text-primary font-medium mb-4 text-sm tracking-wide uppercase">Co-Founder & Ecologist
+                        <h3 class="text-xl font-bold text-white">Rangga Pradita</h3>
+                        <p class="mt-1 text-primary font-medium mb-4 text-xs md:text-sm tracking-wide uppercase">
+                            designer &
+                            el vibe
+                            coder
                         </p>
                         <p class="text-center text-slate-400 text-sm leading-relaxed mb-6 font-light">
-                            With a Ph.D. in Marine Biology, Sarah leads our ocean conservation efforts and spearheads
-                            coral restoration projects globally.
+                            Rangga is a creative designer and developer with a passion for exploring the
+                            intersection of
+                            design and technology.
                         </p>
                         <div class="flex gap-4 text-slate-400 mt-auto">
                             <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-linkedin text-xl"></i></a>
+                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                                <i class="bx bxl-linkedin text-xl"></i>
+                            </a>
                             <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-twitter text-xl"></i></a>
+                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                                <i class="bx bxl-instagram  text-xl"></i>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Profile Card 2 -->
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"
                         class="group flex flex-col items-center p-8 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-white/30 shadow-2xl">
                         <div class="w-40 h-40 mb-6 relative">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
-                                alt="David Chen"
+                            <img src="img/ditya foto.jpg" alt="Prost Diamond"
                                 class="w-full h-full rounded-full object-cover border-[3px] border-white/20 shadow-lg">
                             <div
                                 class="absolute inset-0 rounded-full border-4 border-primary scale-105 opacity-0 group-hover:opacity-100 transition-all duration-500">
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-white">David Chen</h3>
-                        <p class="text-primary font-medium mb-4 text-sm tracking-wide uppercase">Co-Founder & CEO</p>
-                        <p class="text-center text-slate-400 text-sm leading-relaxed mb-6 font-light">
-                            An ex-corporate strategist turned environmental advocate, David brings the vision and
-                            organizational scaling to Re-Earth.
+                        <h3 class="text-xl font-bold text-white">Aditya dharmaputra</h3>
+                        <p class="mt-1 text-primary font-medium mb-4 text-xs md:text-sm tracking-wide uppercase">
+                            Web
+                            Developer & project
+                            manager</p>
+                        <p class="text-center  text-slate-400 leading-relaxed mb-6 font-light">
+                            Who make this project real and who leads the development efforts.
                         </p>
                         <div class="flex gap-4 text-slate-400 mt-auto">
                             <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-linkedin text-xl"></i></a>
+                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                                <i class="bx bxl-linkedin text-xl"></i>
+                            </a>
                             <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-twitter text-xl"></i></a>
+                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                                <i class="bx bxl-instagram  text-xl"></i>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- Profile Card 3 -->
-                    <div
-                        class="group flex flex-col items-center p-8 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 hover:border-white/30 shadow-2xl sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none w-full">
-                        <div class="w-40 h-40 mb-6 relative">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
-                                alt="Elena Rodriguez"
-                                class="w-full h-full rounded-full object-cover border-[3px] border-white/20 shadow-lg">
-                            <div
-                                class="absolute inset-0 rounded-full border-4 border-primary scale-105 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Elena Rodriguez</h3>
-                        <p class="text-primary font-medium mb-4 text-sm tracking-wide uppercase">Head of Outreach</p>
-                        <p class="text-center text-slate-400 text-sm leading-relaxed mb-6 font-light">
-                            Elena bridges the gap between science and people, ensuring local communities are at the
-                            heart of every restoration project.
-                        </p>
-                        <div class="flex gap-4 text-slate-400 mt-auto">
-                            <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="p-2 w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all"><i
-                                    class="bx bxl-twitter text-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 
-    <!-- Glass Footer -->
+    <!-- Footer -->
     <footer class="bg-black/40 backdrop-blur-2xl border-t border-white/10 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
-                <!-- Left Side -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 lg:mb-24">
                 <div class="md:col-span-5 lg:col-span-4">
                     <div class="flex items-center gap-2 mb-6 text-white">
                         <i class="bx bxs-leaf text-primary text-4xl"></i>
@@ -421,65 +443,59 @@
                     </div>
                 </div>
 
-                <!-- Right Side: Links & Social -->
                 <div class="md:col-span-7 lg:col-span-8 flex flex-col h-full justify-between">
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-12">
                         <!-- Quick Links -->
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-6">Menu</h4>
+                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Menu</h4>
                             <ul class="space-y-4 text-slate-400 font-light">
                                 <li><a href="home.html" class="hover:text-primary transition-colors">Home</a></li>
-                                <li><a href="about.html" class="text-primary transition-colors">About Us</a></li>
-                                <li><a href="program.html" class="hover:text-primary transition-colors">Program</a></li>
-                                <li><a href="#" class="hover:text-primary transition-colors">Prices</a></li>
+                                <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Resources -->
                         <div>
-                            <h4 class="text-white font-bold text-lg mb-6">Resources</h4>
+                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Other Links</h4>
                             <ul class="space-y-4 text-slate-400 font-light">
-                                <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
-                                <li><a href="#" class="hover:text-primary transition-colors">Our Team</a></li>
-                                <li><a href="#" class="hover:text-primary transition-colors">Media Kit</a></li>
-                                <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                                <li><a href="home.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
+                                <li><a href="about.html#team" class="hover:text-primary transition-colors">Our Team</a>
+                                </li>
+                                <li><a href="services.html#prices"
+                                        class="hover:text-primary transition-colors">Prices</a></li>
                             </ul>
                         </div>
-                        <!-- Legal -->
+                        <!-- Social Media Links -->
                         <div class="col-span-2 sm:col-span-1">
-                            <h4 class="text-white font-bold text-lg mb-6">Legal</h4>
-                            <ul class="space-y-4 text-slate-400 font-light">
-                                <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
-                                <li><a href="#" class="hover:text-primary transition-colors">Terms of Service</a></li>
-                            </ul>
+                            <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-wider">Follow Us</h4>
+                            <p class="text-slate-400 text-sm font-light mb-6">Stay connected with our community updates.
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
+                                    <i class="bx bxl-facebook text-lg group-hover:scale-110 transition-transform"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
+                                    <i class="bx bxl-twitter text-lg group-hover:scale-110 transition-transform"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
+                                    <i class="bx bxl-instagram text-lg group-hover:scale-110 transition-transform"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Social Media Row -->
-                    <div
-                        class="flex items-center sm:justify-end gap-4 mt-auto pt-8 border-t border-white/10 sm:border-none sm:pt-0">
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                            <i class="bx bxl-facebook text-xl group-hover:scale-110 transition-transform"></i>
-                        </a>
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                            <i class="bx bxl-twitter text-xl group-hover:scale-110 transition-transform"></i>
-                        </a>
-                        <a href="#"
-                            class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-lg group">
-                            <i class="bx bxl-instagram text-xl group-hover:scale-110 transition-transform"></i>
-                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Copyright -->
             <div
                 class="pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 text-sm font-light">
-                    &copy; 2024 Re-Earth Organization. All rights reserved.
+                <p class="text-slate-500 text-sm font-light tracking-wide">
+                    &copy; 2026 Re-Earth Organization. All rights reserved.
                 </p>
-                <p class="text-slate-500 text-sm flex items-center gap-1 font-light">
+                <p class="text-slate-500 text-sm flex items-center gap-1 font-light tracking-wide">
                     Made with <i class="bx bxs-heart text-base text-primary"></i> for the planet.
                 </p>
             </div>
@@ -488,6 +504,10 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="AOS-v2.3.2/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
